@@ -1,0 +1,21 @@
+.popup__user {
+	margin: 207px 0 0;
+    width: 430px;
+    min-height: 330px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 34px 36px 28px;
+  }
+
+@media screen and (max-width: 705px) {
+	.popup__user {
+		margin-top: 56px;
+		width: 100vw;
+		height: calc(100vh - 56px);
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		padding: 16px;
+	}
+}

@@ -1,0 +1,26 @@
+.saved-info__amount {
+	font-family: 'RobotoSlab';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 46px;
+	color: #1A1B22;
+
+	width: 550px;
+	margin: 0 0 30px 0;
+}
+
+@media screen and (max-width: 800px) {
+	.saved-info__amount {
+		font-size: 30px;
+		line-height: 34px;
+		margin-bottom: 16px;
+		width: 350px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.saved-info__amount {
+		width: calc(100vw - 16px * 2);
+	}
+}

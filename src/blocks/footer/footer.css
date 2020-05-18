@@ -1,0 +1,28 @@
+@import url('./__copyright/footer__copyright.css');
+@import url('./__links-block/_links-block.css');
+
+.footer {
+	height: 80px;
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	background: white;
+}
+
+@media screen and (max-width: 800px) {
+	.footer {
+		height: 64px;
+	}
+}
+
+@media screen and (max-width: 705px) {
+	.footer {
+		height: 224px;
+		position: relative;
+	}
+}

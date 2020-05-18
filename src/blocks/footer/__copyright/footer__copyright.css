@@ -1,0 +1,24 @@
+.copyright {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: #B6BCBF;
+	margin: 0 0 0 104px;
+}
+
+@media screen and (max-width: 800px) {
+	.copyright {
+		margin-left: 40px;
+	}
+}
+
+@media screen and (max-width: 705px) {
+	.copyright {
+		position: absolute;
+		top: 132px;
+		left: 16px;
+		margin: 0;
+	}
+}

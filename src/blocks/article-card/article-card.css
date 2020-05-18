@@ -1,0 +1,43 @@
+@import url(./__image/article-card__image.css);
+@import url(./__description/article-card__description.css);
+@import url(./__icon/article-card__icon.css);
+@import url(./__keyword/article-card__keyword.css);
+@import url(./__date/article-card__date.css);
+@import url(./__text/__text.css);
+@import url(./__source/article-card__source.css);
+
+.article-card {
+	width: 400px;
+	height: 576px;
+	background-color: white;
+	border-radius: 16px;
+
+	padding: 0;
+	margin: 0 8px 16px;
+
+	z-index: 0;
+}
+
+@media screen and (max-width: 1100px) {
+	.article-card {
+		width: 300px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.article-card {
+		width: 224px;
+		height: 420px;
+		margin: 0 4px 8px;
+		border-radius: 15px;
+	}
+}
+
+@media screen and (max-width: 705px) {
+	.article-card {
+		width: 288px;
+		height: 446px;
+		margin: 0 5px 10px;
+		border-radius: 15px;
+	}
+}

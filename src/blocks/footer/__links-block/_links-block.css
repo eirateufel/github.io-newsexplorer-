@@ -1,0 +1,27 @@
+@import url('./_links-block-main/footer__links-block_links-block-main.css');
+@import url('./_links-block-praktikum/footer__links-block_links-block-praktikum.css');
+@import url('./_linnks-block-github/footer__links-block_links-block-github.css');
+@import url('./_linnks-block-facebook/footer__links-block_links-block-facebook.css');
+
+.links-block {
+	display: flex;
+	width: min-content;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	color: #1A1B22;
+}
+
+
+@media screen and (max-width: 705px) {
+	.links-block {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 100%;
+		width: 100%;
+	}
+}

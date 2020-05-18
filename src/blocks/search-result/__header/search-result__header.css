@@ -1,0 +1,25 @@
+.search-result__header {
+	font-family: 'RobotoSlab';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 46px;
+	color: #1A1B22;
+
+	width: 500px;
+	margin: 80px 0px 64px 8px;
+	padding: 0px;
+}
+
+@media screen and (max-width: 800px) {
+	.search-result__header {
+		margin: 40px 0 32px 4px;
+	}
+}
+
+@media screen and (max-width: 705px) {
+	.search-result__header {
+		margin: 32px 0 24px 6px;
+		width: 288px;
+	}
+}

@@ -1,0 +1,22 @@
+.search-result__loading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	display: none;
+}
+
+.loading-pic {
+	margin: 80px auto 24px;
+	width: 74px;
+	height: 74px;
+}
+
+.loading-text {
+	margin: 0 auto 80px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	color: #B6BCBF;
+}

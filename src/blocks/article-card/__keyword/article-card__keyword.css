@@ -1,0 +1,44 @@
+.article-card__keyword {
+	background-color: white;
+	border: none;
+	border-radius: 10px;
+
+	white-space: nowrap;
+	width: min-content;
+	max-width: 300px;
+	height: 40px;
+	position: absolute;
+	top: 24px;
+	left: 24px;
+	text-align: center;
+	line-height: 40px;
+	padding: 0 12px;
+
+  	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+
+	text-transform: lowercase;
+}
+
+.article-card__keyword::first-letter {
+	text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 800px) {
+	.article-card__keyword {
+		top: 8px;
+		left: 8px;
+		max-width: 160px;
+	}
+}
+
+@media screen and (max-width: 705px) {
+	.article-card__keyword {
+		top: 16px;
+		left: 16px;
+		max-width: 208px;
+	}
+}

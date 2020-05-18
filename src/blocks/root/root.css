@@ -1,0 +1,14 @@
+@import url(./__section/root__section.css);
+
+.root {
+  background-color: #F5F6F7;
+  min-height: 100vh;
+  font-family: 'Inter';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 1024px) {
+  .root {
+  }
+}

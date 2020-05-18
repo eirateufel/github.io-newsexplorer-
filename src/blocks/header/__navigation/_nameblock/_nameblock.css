@@ -1,0 +1,20 @@
+@import url(./_sitename/header__navigation_nameblock_sitename.css);
+@import url(./_nav-close-button/header__navigation_nav-close-button.css);
+
+.nameblock {
+	display: flex;
+	justify-content: space-between;
+	width: 288px;
+}
+
+@media screen and (max-width: 705px) {
+	.nameblock {
+		width: 100vw;
+		height: 56px;
+		align-items: center;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	}
+	.nameblock_theme_dark {
+		border-bottom: 1px solid rgba(0, 0, 0, .2);
+	}
+}

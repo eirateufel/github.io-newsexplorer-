@@ -1,0 +1,19 @@
+.search-result__cards {
+	display: flex;
+	width: min-content;
+	margin: 0 auto;
+	height: 640px;
+}
+
+@media screen and (max-width: 800px) {
+	.search-result__cards {
+		height: 452px;
+	}
+}
+
+@media screen and (max-width: 705px) {
+	.search-result__cards {
+		height: calc(3 * 446px + 2 * 10px + 15px);
+		flex-direction: column;
+	}
+}

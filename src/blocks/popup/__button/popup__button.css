@@ -1,0 +1,24 @@
+.popup__button {
+	width: 100%;
+	height: 64px;
+	border: none;
+	border-radius: 100px;
+	margin: 39px 0 16px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;	color: white;
+}
+
+.popup__button:disabled {
+	color: #B6BCBF;
+	background: #E6E8EB;;
+}
+
+.popup__button_save{
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+}

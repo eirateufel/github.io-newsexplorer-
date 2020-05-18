@@ -1,0 +1,23 @@
+.search-button {
+	width: 168px;
+	height: 64px;
+	padding: 0;
+
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+@media screen and (max-width: 800px) {
+	.search-button {
+		width: 160px;
+		height: 56px;
+	}
+}
+
+@media screen and (max-width: 705px) {
+	.search-button {
+		width: 288px;
+		top: 72px;
+	}
+}

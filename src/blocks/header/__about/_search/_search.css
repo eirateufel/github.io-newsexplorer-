@@ -1,0 +1,22 @@
+@import url('./_search-button/header__about_search_search-button.css');
+@import url('./_search-input/header__about_search_search-input.css');
+
+.search {
+	position: relative;
+	width: 608px;
+	height: 64px;
+}
+
+@media screen and (max-width: 800px) {
+	.search {
+		width: 448px;
+		height: 56px;
+	}
+}
+
+@media screen and (max-width: 705px) {
+	.search {
+		width: 288px;
+		height: 128px;
+	}
+}

@@ -1,0 +1,20 @@
+.links-block__main {
+	width: 112px;
+	height: 24px;
+}
+
+@media screen and (max-width: 800px) {
+	.links-block__main {
+		width: 88px;
+		height: 22px;
+	}
+}
+
+@media screen and (max-width: 705px) {
+	.links-block__main {
+		text-align: left;
+		position: absolute;
+		top: 20px;
+		left: 16px;
+	}
+}

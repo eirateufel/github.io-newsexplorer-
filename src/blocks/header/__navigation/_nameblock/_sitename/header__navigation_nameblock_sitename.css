@@ -1,0 +1,30 @@
+.sitename {
+	margin: 0 0 0 40px;
+	height: inherit;
+	vertical-align: middle;
+
+	color: white;
+	font-family: 'RobotoSlab';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.sitename_theme_dark {
+	color: #1A1B22;
+}
+
+.sitename__wrapper {
+	display: inline-block;
+}
+
+@media screen and (max-width: 705px) {
+	.sitename {
+		height: 24px;
+		margin: 16px;
+	}
+	.sitename__wrapper {
+		margin: 0;
+	}
+}

@@ -1,0 +1,24 @@
+.saved-info__keywords {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	color: #1A1B22;
+	margin: 0;
+}
+
+.saved-info__keyword-list {
+	font-weight: 700;
+}
+
+.saved-info__keyword-number {
+	font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+	.saved-info__keywords, .saved-info__keyword-list, .saved-info__keyword-number {
+		font-size: 14px;
+		line-height: 24px;
+	}
+}

@@ -1,0 +1,55 @@
+@import url(./__navigation/__navigation.css);
+@import url(./__about/__about.css);
+
+.header {
+	height: 576px;
+	display: flex;
+	flex-direction: column;
+  	align-items: center;
+  	background-color: #F5F6F7;
+	border: none;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin: 0;
+	padding: 0;
+}
+
+.header_theme_dark {
+ 	height: min-content;
+	background: white;
+}
+
+@media screen and (max-width: 705px) {
+	.header {
+		height: max-content;
+		position: relative;
+		height: 536px;
+	}
+	.overlay {
+		position: relative;
+	}
+	.overlay::after {
+		content: '';
+		display: block;
+		background: black;
+		opacity: 0.5;
+		height: 100vh;
+		width: 100vw;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: 1;
+	}
+	.gray-field {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		background: #1A1B22;
+		z-index: 2;
+	}
+	.header_theme_dark {
+		height: min-content;
+	}
+}
+

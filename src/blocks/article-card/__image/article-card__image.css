@@ -1,0 +1,24 @@
+.article-card__image {
+  height: 272px;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  position: relative;
+}
+
+@media screen and (max-width: 800px) {
+	.article-card__image {
+		height: 150px;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+	}
+}
+
+@media screen and (max-width: 705px) {
+	.article-card__image {
+		height: 196px;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+	}
+}
