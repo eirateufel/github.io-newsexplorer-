@@ -1,12 +1,14 @@
 {
- "name": "api_news",
+ "name": "newsExplorer",
+ "homepage": "https://github.com/eirateufel/github.io-newsexplorer-",
  "version": "1.0.0",
- "description": "A simple express.js server for a news website",
+ "description": "Frontend for news explorer website",
  "main": "app.js",
  "scripts": {
   "dev": "webpack-dev-server --mode development --open --watch",
   "eslint:fix": "npx eslint --fix .eslintrc --ext .js .",
-  "build": "rimraf dist && webpack --mode production"
+  "build": "rimraf dist && webpack --mode production",
+  "deploy": "gh-pages -d dist"
  },
  "devDependencies": {
   "@babel/cli": "^7.8.4",
@@ -19,7 +21,7 @@
   "eslint-config-airbnb-base": "^14.1.0",
   "eslint-plugin-import": "^2.20.2",
   "file-loader": "^6.0.0",
-  "gh-pages": "^2.2.0",
+  "gh-pages": "~2.0.1",
   "html-webpack-plugin": "^4.3.0",
   "mini-css-extract-plugin": "^0.9.0",
   "nodemon": "^2.0.2",
