@@ -3,7 +3,7 @@
  "homepage": "https://github.com/eirateufel/github.io-newsexplorer-",
  "version": "1.0.0",
  "description": "Frontend for news explorer website",
- "main": "app.js",
+ "main": "index.js",
  "scripts": {
   "dev": "webpack-dev-server --mode development --open --watch",
   "eslint:fix": "npx eslint --fix .eslintrc --ext .js .",
