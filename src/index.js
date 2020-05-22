@@ -1,1 +1,1 @@
-import '<%=htmlWebpackPlugin.files.css %>';
+import './pages/index.css';
