@@ -10,11 +10,14 @@ const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
 	// Точка входа (откуда брать файл)
-	entry: { main: './src/index.js' },
+	entry: {
+		main: './src/index.js',
+		second: './src/second/index.js',
+	 },
 	// Точка выхода (куда будут записываться фалы)
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: '[name].[chunkhash].js',
+		filename: '[name]/[name].[chunkhash].js',
 	},
 
 	// Правила обработки файлов при сборке
@@ -61,7 +64,9 @@ module.exports = {
 	},
 
 	plugins: [
-		new MiniCssExtractPlugin({ filename: 'style.[contenthash].css' }),
+		new MiniCssExtractPlugin({
+			filename: '[name]/[name].[contenthash].css',
+		}),
 		new OptimizeCssAssetsPlugin({
 			assetNameRegExp: /\.css$/g,
 			cssProcessor: require('cssnano'),
@@ -76,6 +81,11 @@ module.exports = {
 			template: './src/index.html', // откуда брать образец для сравнения с текущим видом проекта
 			filename: 'index.html', // имя выходного файла, то есть того, что окажется в папке dist после сборки
 		}),
+		new HtmlWebpackPlugin({
+			inject: false,
+			template: './src/second/index.html',
+			filename: './second/index.html',
+		  }),
 		new WebpackMd5Hash(),
 		new webpack.DefinePlugin({
 			NODE_ENV: JSON.stringify(process.env.NODE_ENV),
