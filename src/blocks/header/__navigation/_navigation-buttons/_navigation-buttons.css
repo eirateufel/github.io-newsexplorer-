@@ -18,3 +18,9 @@
 		background: transparent;
 	}
 }
+
+@media screen and (max-width: 540px) {
+	.navigation-buttons {
+		display: none;
+	}
+}

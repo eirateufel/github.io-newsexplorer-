@@ -9,7 +9,11 @@
 }
 
 .nav-close-button__img {
+	display: block;
 	width: 24px;
+	height: 24px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 @media screen and (max-width: 705px) {

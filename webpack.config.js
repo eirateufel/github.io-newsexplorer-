@@ -43,6 +43,7 @@ module.exports = {
 						options: {
 							name: './images/[name].[ext]', // указали папку, куда складывать изображения
 							esModule: false,
+							publicPath: '../',
 						},
 					},
 					{
@@ -70,10 +71,16 @@ module.exports = {
 			// Настройка для подгрузки шрифтов
 			{
 				test: /\.(eot|ttf|woff|woff2)$/,
-				loader: 'file-loader',
-				options: {
-					name: './vendor/[name].[ext]', // указали папку, куда складывать шрифты
-				},
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: './vendor/[name].[ext]', // указали папку, куда складывать шрифты
+							publicPath: '../',
+							esModule: false,
+						},
+					},
+				],
 			},
 		],
 	},
@@ -94,7 +101,7 @@ module.exports = {
 			// Означает, что:
 			inject: false, // стили НЕ нужно прописывать внутри тегов
 			template: './src/index.html', // откуда брать образец для сравнения с текущим видом проекта
-			filename: 'index.html', // имя выходного файла, то есть того, что окажется в папке dist после сборки
+			filename: './index.html', // имя выходного файла, то есть того, что окажется в папке dist после сборки
 		}),
 		new HtmlWebpackPlugin({
 			inject: false,
