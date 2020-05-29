@@ -3,6 +3,7 @@
 	flex-direction: column;
 	align-items: center;
 	height: 282px;
+	display: none;
 }
 
 .search-result__loading_not-found {
