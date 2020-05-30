@@ -3,6 +3,7 @@
 
 .about-me {
 	background: white;
+	max-width: 99vw;
 }
 
 .about-me__container {

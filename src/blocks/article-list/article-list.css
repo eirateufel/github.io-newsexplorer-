@@ -1,6 +1,7 @@
 .article-list {
 	background-color: #F5F6F7;
 	padding: 62px 0;
+	max-width: 99vw;
 }
 
 .articles-container {
@@ -8,6 +9,7 @@
 	flex-wrap: wrap;
 	width: 1248px;
 	margin: 0 auto;
+	max-width: 99vw;
 }
 
 
