@@ -17,7 +17,7 @@
 					<p class="sitename__wrapper">NewsExplorer</p>
 				</div>
 				<button class="button nav-close-button">
-					<img class="nav-close-button__img" src="main/<%= require('./images/menu-open.svg') %>">
+					<img class="nav-close-button__img" src="main/<%= require('./images/menu-open.svg') %>" alt="Открыть меню">
 				</button>
 			</div>
 			<div class="navigation-buttons">
@@ -30,7 +30,7 @@
 				<button class="button auth-button">
 					<span class="auth-button__wrapper">
 						<p class="auth-button__name">Авторизоваться</p>
-						<img class="auth-button__pic" src="main/<%= require('./images/logout.svg') %>" style="display: none;">
+						<img class="auth-button__pic" src="main/<%= require('./images/logout.svg') %>" style="display: none;" alt="кнопка выхода">
 					</span>
 				</button>
 			</div>
@@ -48,7 +48,7 @@
 
 	<div class="popup">
         <div class="popup__user">
-          <img src="main/<%= require('./images/close.svg') %>" alt="" class="popup__close">
+          <img src="main/<%= require('./images/close.svg') %>" alt="" class="popup__close" alt="закрыть">
           <h3 class="popup__title">Вход</h3>
           <form class="popup__form popup__form_edit" name="edit" novalidate>
               <div class="popup__field">
@@ -69,7 +69,7 @@
 
 	<div class="popup">
         <div class="popup__new-user">
-          <img src="main/<%= require('./images/close.svg') %>" alt="" class="popup__close">
+          <img src="main/<%= require('./images/close.svg') %>" alt="" class="popup__close" alt="закрыть">
           <h3 class="popup__title">Регистрация</h3>
           <form class="popup__form popup__form_edit" name="edit" novalidate>
               <div class="popup__field">
@@ -95,7 +95,7 @@
 
 	<div class="search-result">
 		<div class="search-result__loading search-result__loading_not-found">
-			<img class="search-result__icon search-result__icon_not-found" src="main/<%= require('./images/loading-icon.png') %>">
+			<img class="search-result__icon search-result__icon_not-found" src="main/<%= require('./images/loading-icon.png') %>" alt="Ничего не найдено">
 			<p class="search-result__nothing-found">Ничего не найдено</p>
 			<p class="search-result__text search-result__text_not-found">К сожалению по вашему запросу
 				ничего не найдено.</p>
@@ -152,7 +152,7 @@
 
 	<div class="about-me">
 		<div class="about-me__container">
-			<img class="about-me__pic" src="main/<%= require('./images/avatar.png') %>">
+			<img class="about-me__pic" src="main/<%= require('./images/avatar.png') %>" alt="Портрет автора не подгрузился :(">
 			<div class="about-me__text">
 				<h3 class="about-header">Об авторе</h3>
 				<p class="about-paragraph">Тут потом будет какой-то другой текст и другая фотография, но не сегодня, не сегодня.</p>
@@ -166,10 +166,10 @@
 			<a class="button link links-block__main" href="index.html">Главная</a>
 			<a class="button link links-block__praktikum" target="_blank" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a>
 			<a class="button links-block__github" target="_blank" href="https://github.com/eirateufel">
-				<img class="link-img" src="main/<%= require('./images/github.svg') %>">
+				<img class="link-img" src="main/<%= require('./images/github.svg') %>" alt="GitHub">
 			</a>
 			<a class="button links-block__facebook" target="_blank" href="https://www.facebook.com/eirateufel">
-				<img class="link-img" src="main/<%= require('./images/facebook.svg') %>">
+				<img class="link-img" src="main/<%= require('./images/facebook.svg') %>" alt="Facebook">
 			</a>
 		</div>
 	</footer>
