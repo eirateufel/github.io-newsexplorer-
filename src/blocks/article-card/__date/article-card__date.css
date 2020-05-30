@@ -1,7 +1,7 @@
 .article-card__date {
   	margin: 0;
 
-  	font-family: 'SourceSansPro';
+  	font-family: 'SourceSansPro', 'Helvetica', 'Helvetica Neue', 'Arial', 'Tahoma', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;

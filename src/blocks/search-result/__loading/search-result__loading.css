@@ -26,7 +26,7 @@
 
 .search-result__text {
 	margin: 0 auto 80px;
-	font-family: 'Roboto';
+	font-family: 'Roboto', 'Helvetica', 'Helvetica Neue', 'Arial', 'Tahoma', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
@@ -40,7 +40,8 @@
 }
 
 .search-result__nothing-found {
-	font-family: 'RobotoSlab';
+	font-family: 'RobotoSlab', 'Helvetica', 'Helvetica Neue', 'Arial', 'Tahoma', sans-serif;
+
 	font-style: normal;
 	font-weight: normal;
 	font-size: 26px;

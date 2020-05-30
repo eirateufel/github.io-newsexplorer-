@@ -6,7 +6,7 @@
 }
 
 .about__header {
-	font-family: 'RobotoSlab';
+	font-family: 'RobotoSlab', 'Helvetica', 'Helvetica Neue', 'Arial', 'Tahoma', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 60px;
@@ -16,7 +16,7 @@
 }
 
 .about__text {
-	font-family: 'Roboto';
+	font-family: 'Roboto', 'Helvetica', 'Helvetica Neue', 'Arial', 'Tahoma', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;

@@ -3,7 +3,7 @@
 .root {
   background-color: #F5F6F7;
   min-height: 100vh;
-  font-family: 'Inter';
+  font-family: 'Inter', 'Helvetica', 'Helvetica Neue', 'Arial', 'Tahoma', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
