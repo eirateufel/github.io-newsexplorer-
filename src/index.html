@@ -29,7 +29,7 @@
 				</a>
 				<button class="button auth-button">
 					<span class="auth-button__wrapper">
-						<p class="auth-button__name">Авторизоваться</p>
+						<span class="auth-button__name">Авторизоваться</span>
 						<img class="auth-button__pic" src="main/<%= require('./images/logout.svg') %>" style="display: none;" alt="кнопка выхода">
 					</span>
 				</button>
@@ -48,7 +48,7 @@
 
 	<div class="popup">
         <div class="popup__user">
-          <img src="main/<%= require('./images/close.svg') %>" alt="" class="popup__close" alt="закрыть окно">
+          <img src="main/<%= require('./images/close.svg') %>" class="popup__close" alt="закрыть">
           <h3 class="popup__title">Вход</h3>
           <form class="popup__form popup__form_edit" name="edit" novalidate>
               <div class="popup__field">
@@ -69,7 +69,7 @@
 
 	<div class="popup">
         <div class="popup__new-user">
-          <img src="main/<%= require('./images/close.svg') %>" alt="" class="popup__close" alt="закрыть">
+          <img src="main/<%= require('./images/close.svg') %>" class="popup__close" alt="закрыть">
           <h3 class="popup__title">Регистрация</h3>
           <form class="popup__form popup__form_edit" name="edit" novalidate>
               <div class="popup__field">
