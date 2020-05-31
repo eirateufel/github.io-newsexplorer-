@@ -16,7 +16,19 @@
 	color: white;
 }
 
+.navigation-buttons__button {
+	height: 80px;
+}
+
+.navigation-buttons__auth {
+	box-sizing: border-box;
+	display: block;
+}
+
 @media screen and (max-width: 800px) {
+	.navigation-buttons__button {
+		height: 66px;
+	}
 	.nav-button {
 		padding-top: 23px;
 	}

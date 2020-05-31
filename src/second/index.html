@@ -20,20 +20,26 @@
 					<img class="nav-close-button__img" src="<%= require('../images/menu-open_dark.svg') %>" alt="открыть/закрыть меню">
 				</button>
 			</div>
-			<div class="navigation-buttons navigation-buttons_logout">
-				<a class="button nav-button nav-button_type_main nav-button_theme_dark" href="../index.html">
-					<span class="nav-button__wrapper">Главная</span>
-				</a>
-				<button class="button nav-button nav-button_type_saved nav-button_selected nav-button_theme_dark">
-					<span class="nav-button__wrapper">Сохранённые статьи</span>
-				</button>
-				<button class="button auth-button auth-button_theme_dark">
-					<span class="auth-button__wrapper">
-						<span class="auth-button__name">ВашеИмя</span>
-						<img class="auth-button__pic" src="../images/logout.svg" alt="выйти">
-					</span>
-				</button>
-			</div>
+			<ul class="navigation-buttons" style="list-style-type: none;">
+				<li class="navigation-buttons__button">
+					<a class="button nav-button nav-button_type_main nav-button_theme_dark" href="../index.html">
+						<span class="nav-button__wrapper">Главная</span>
+					</a>
+				</li>
+				<li class="navigation-buttons__button">
+					<button class="button nav-button nav-button_type_saved nav-button_selected nav-button_theme_dark">
+						<span class="nav-button__wrapper">Сохранённые статьи</span>
+					</button>
+				</li>
+				<li class="navigation-buttons__auth">
+					<button class="button auth-button auth-button_theme_dark">
+						<span class="auth-button__wrapper">
+							<span class="auth-button__name">ВашеИмя</span>
+							<img class="auth-button__pic" src="../images/logout.svg" alt="выйти">
+						</span>
+					</button>
+				</li>
+			</ul>
 			</div>
 		</div>
 	</header>

@@ -7,6 +7,7 @@
 	width: max-content;
 	height: inherit;
 	align-items: center;
+	margin: 0;
 }
 
 @media screen and (max-width: 705px) {
@@ -21,6 +22,7 @@
 
 @media screen and (max-width: 540px) {
 	.navigation-buttons {
-		display: none;
+		width: 98vw;
+		padding-left: calc(49vw - 145px);
 	}
 }

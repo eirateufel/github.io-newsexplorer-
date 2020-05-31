@@ -14,18 +14,20 @@
 	font-size: 16px;
 	color: white;
 
-	align-items: center;
-}
-
-.auth-button_theme_dark {
-	border-color: #1A1B22;
-	color:  #1A1B22;
+	justify-content: center;
 }
 
 .auth-button__wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: min-content;
+	flex-wrap: nowrap;
+}
+
+.auth-button_theme_dark {
+	border-color: #1A1B22;
+	color:  #1A1B22;
 }
 
 .auth-button__name {
@@ -65,9 +67,6 @@
 	.auth-button {
 		width: 288px;
 		margin: 0 0 24px 0;
-		height: max-content;
-	}
-	.auth-button__wrapper {
 		height: 56px;
 	}
 }

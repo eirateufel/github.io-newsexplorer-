@@ -10,8 +10,8 @@
 <body>
   <div class="root">
 	<header class="header" style="background-image: url('main/<%= require('./images/header-background.jpg') %>')">
-		<div class="navigation">
-			<div class="navigation-wrapper">
+		<div class="navigation overlay">
+			<div class="navigation-wrapper gray-field">
 			<div class="nameblock">
 				<div class="sitename">
 					<p class="sitename__wrapper">NewsExplorer</p>
@@ -20,20 +20,26 @@
 					<img class="nav-close-button__img" src="main/<%= require('./images/menu-open.svg') %>" alt="открыть/закрыть меню">
 				</button>
 			</div>
-			<div class="navigation-buttons">
-				<button class="button nav-button nav-button_type_main nav-button_selected">
-					<span class="nav-button__wrapper">Главная</span>
-				</button>
-				<a class="button nav-button nav-button_type_saved" href="./second/index.html">
-					<span class="nav-button__wrapper">Сохранённые статьи</span>
-				</a>
-				<button class="button auth-button">
-					<span class="auth-button__wrapper">
-						<span class="auth-button__name">Авторизоваться</span>
-						<img class="auth-button__pic" src="main/<%= require('./images/logout.svg') %>" style="display: none;" alt="кнопка выхода">
-					</span>
-				</button>
-			</div>
+			<ul class="navigation-buttons" style="list-style-type: none;">
+				<li class="navigation-buttons__button">
+					<button class="button nav-button nav-button_type_main nav-button_selected">
+						<span class="nav-button__wrapper">Главная</span>
+					</button>
+				</li>
+				<li class="navigation-buttons__button">
+					<a class="button nav-button nav-button_type_saved" href="./second/index.html">
+						<span class="nav-button__wrapper">Сохранённые статьи</span>
+					</a>
+				</li>
+				<li class="navigation-buttons__auth">
+					<button class="button auth-button">
+						<span class="auth-button__wrapper">
+							<span class="auth-button__name">Авторизоваться</span>
+							<img class="auth-button__pic" src="main/<%= require('./images/logout.svg') %>" style="display: none;" alt="кнопка выхода">
+						</span>
+					</button>
+				</li>
+			</ul>
 		</div>
 		</div>
 		<div class="about">
