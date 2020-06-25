@@ -6,7 +6,7 @@
 }
 
 .about__header {
-	font-family: 'RobotoSlab';
+	font-family: 'RobotoSlab', 'Helvetica', 'Helvetica Neue', 'Arial', 'Tahoma', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 60px;
@@ -16,12 +16,28 @@
 }
 
 .about__text {
-	font-family: 'Roboto';
+	font-family: 'Roboto', 'Helvetica', 'Helvetica Neue', 'Arial', 'Tahoma', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 24px;
 	margin: 0 0 64px 0;
+}
+
+@media screen and (max-width: 705px) {
+	.about {
+		width: 288px;
+	}
+	.about__header {
+		font-size: 36px;
+		line-height: 40px;
+		margin: 30px 0 16px;
+		width: 285px;
+	}
+	.about__text {
+		margin: 0 0 122px 0;
+		width: 288px;
+	}
 }
 
 @media screen and (max-width: 705px) {

@@ -10,11 +10,14 @@ const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
 	// Точка входа (откуда брать файл)
-	entry: { main: './src/index.js' },
+	entry: {
+		main: './src/index.js',
+		second: './src/second/index.js',
+	 },
 	// Точка выхода (куда будут записываться фалы)
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: '[name].[chunkhash].js',
+		filename: '[name]/[name].[chunkhash].js',
 	},
 
 	// Правила обработки файлов при сборке
@@ -33,18 +36,34 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.(png|jpg|gif|ico|svg)$/,
+				test: /\.(png|jpg|jpeg|gif|ico|svg)$/,
 				use: [
 					{
 						loader: 'file-loader',
 						options: {
 							name: './images/[name].[ext]', // указали папку, куда складывать изображения
 							esModule: false,
+							publicPath: '../',
 						},
 					},
 					{
 						loader: 'image-webpack-loader',
-						options: {},
+						options: {
+							mozjpeg: {
+							  progressive: true,
+							  quality: 65,
+							},
+							optipng: {
+							  enabled: false,
+							},
+							pngquant: {
+							  quality: [0.65, 0.9],
+							  speed: 4,
+							},
+							gifsicle: {
+							  interlaced: false,
+							},
+						},
 					},
 				],
 			},
@@ -52,16 +71,24 @@ module.exports = {
 			// Настройка для подгрузки шрифтов
 			{
 				test: /\.(eot|ttf|woff|woff2)$/,
-				loader: 'file-loader',
-				options: {
-					name: './vendor/[name].[ext]', // указали папку, куда складывать шрифты
-				},
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: './vendor/[name].[ext]', // указали папку, куда складывать шрифты
+							publicPath: '../',
+							esModule: false,
+						},
+					},
+				],
 			},
 		],
 	},
 
 	plugins: [
-		new MiniCssExtractPlugin({ filename: 'style.[contenthash].css' }),
+		new MiniCssExtractPlugin({
+			filename: '[name]/[name].[contenthash].css',
+		}),
 		new OptimizeCssAssetsPlugin({
 			assetNameRegExp: /\.css$/g,
 			cssProcessor: require('cssnano'),
@@ -74,8 +101,13 @@ module.exports = {
 			// Означает, что:
 			inject: false, // стили НЕ нужно прописывать внутри тегов
 			template: './src/index.html', // откуда брать образец для сравнения с текущим видом проекта
-			filename: 'index.html', // имя выходного файла, то есть того, что окажется в папке dist после сборки
+			filename: './index.html', // имя выходного файла, то есть того, что окажется в папке dist после сборки
 		}),
+		new HtmlWebpackPlugin({
+			inject: false,
+			template: './src/second/index.html',
+			filename: './second/index.html',
+		  }),
 		new WebpackMd5Hash(),
 		new webpack.DefinePlugin({
 			NODE_ENV: JSON.stringify(process.env.NODE_ENV),

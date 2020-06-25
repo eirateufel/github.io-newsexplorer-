@@ -7,6 +7,7 @@
 	height: 294px;
 	padding: 40px 0 56px;
 	box-sizing: border-box;
+	max-width: 98vw;
 }
 
 .saved-info__container {

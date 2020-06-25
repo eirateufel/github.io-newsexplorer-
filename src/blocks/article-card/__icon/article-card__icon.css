@@ -4,32 +4,40 @@
 	position: absolute;
 	top: 24px;
 	right: 24px;
-	background: url(../../../images/article-save.svg) center no-repeat;
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
 	transition: transform .3s linear;
+	background-image: url(../../../images/article-save.svg) center no-repeat;
+}
+
+.article-card__icon_save {
+	background: url(../../../images/article-save.svg) center no-repeat;
 }
 
 .article-card__icon_del {
-	background-image: url(../../../images/article-del.svg);
+  background: url(../../../images/article-del.svg) center no-repeat;
 }
 
-.article-card__icon_saved {
-  background-image: url(../../../images/article-del.svg);
-}
-
-.article-card__icon:hover {
+.article-card__icon_save:hover {
 	background: url(../../../images/article-save_hover.svg);
 }
 
 
-.article-card__icon:focus {
+.article-card__icon_save:focus {
 	background: url(../../../images/article-save_saved.svg);
 }
 
 .article-card__icon_saved {
 	background: url(../../../images/article-save_saved.svg);
+}
+
+.article-card__icon_del:hover {
+	background: url(../../../images/article-del_hover.svg);
+}
+
+.article-card__icon_del:focus {
+	background: url(../../../images/article-del_hover.svg);
 }
 
 @media screen and (max-width: 800px) {

@@ -6,7 +6,8 @@
 .links-block {
 	display: flex;
 	width: min-content;
-	font-family: 'Roboto';
+	max-width: 98vw;
+	font-family: 'Roboto', 'Helvetica', 'Helvetica Neue', 'Arial', 'Tahoma', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
